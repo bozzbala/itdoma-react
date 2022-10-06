@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+	font-size: 14px;
+}
+header{
+	background-color: #414141;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.h-cont{
+	width: 70%;
+	margin: 0 auto;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.h-cont a{
+	text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.nav{
+	color: black;
+	padding: 10px 15px;
+	background-color: white;
+	border-radius: 10px;
+	transition: 0.3s;
+	margin: 0 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav:hover{
+	background-color: rgb(179, 179, 179);
+}
+
+main{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.form-post{
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.250);
+	padding: 20px;
+}
+
+.form-input input{
+	padding: 5px;
+	border-radius: 5px;
+	outline: none;
+	font-size: 18px;
+	margin: 10px 0px;
+}
+.form-input textarea{
+	resize: none;
+	font-size: 1rem;
+	padding: 5px;
+	border-radius: 5px;
+	outline: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-post button{
+	width: min-content;
+	background-color: rgb(131, 243, 131);
+	border: none;
+	padding: 15px 20px;
+	border-radius: 15px;
+	margin: 10px 0px;
+	cursor: pointer;
+	font-size: 18px;
+	transition: 0.3s;
+}
+
+.form-post button:hover{
+	background-color: rgb(255, 253, 119);
+}
+
+.post{
+	margin: 20px 0px;
+	width: 100%;
+	border-radius: 20px;
+	box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.250);
+	padding: 20px;
+}
+
+.post-text{
+	margin: 5px 0;
+}
+
+.post-id{
+	width: 100%;
+	display: flex;
+	justify-content: end;
 }
